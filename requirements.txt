@@ -1,3 +1,6 @@
 gdown
 pandas
 ipykernel
+ipython
+matplotlib
+seaborn

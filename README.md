@@ -1,6 +1,6 @@
 # HR Analytics - Predicción de Promoción de Empleados (ML_TF)
 
-Este proyecto implementa un pipeline completo de Machine Learning para predecir la promoción de empleados a partir de datos históricos de Recursos Humanos. Abarca desde la ingesta y limpieza de datos hasta el entrenamiento, evaluación y explicabilidad de múltiples modelos de clasificación.
+Este proyecto implementa un pipeline completo de Machine Learning para predecir la promoción de empleados a partir de un dataset de origen sintético de Recursos Humanos. Abarca desde la ingesta y limpieza de datos hasta el entrenamiento, evaluación y explicabilidad de múltiples modelos de clasificación.
 
 ## 🚀 Instalación y Configuración
 
@@ -42,14 +42,14 @@ ML_TF/
 
 | Archivo | Descripción |
 |---------|-------------|
-| `conexion_bd.py` | Descarga automáticamente el dataset desde Google Drive (si no existe localmente) y lo retorna como un DataFrame de Pandas. |
+| `conexion_bd.py` | Descarga automáticamente el dataset sintético desde Google Drive (si no existe localmente) y lo retorna como un DataFrame de Pandas. |
 | `pipeline.ipynb` | Notebook principal que contiene todo el flujo de trabajo: EDA, preprocesamiento, transformación, modelado, evaluación y explicabilidad. |
 | `requirements.txt` | Librerías necesarias: `gdown`, `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `shap`, `tabulate`, `ipykernel`, `ipython`. |
 
 ## 📊 Fases del Pipeline
 
 ### 1. Ingesta de Datos
-Descarga e ingesta automatizada del dataset desde Google Drive hacia un DataFrame de Pandas, gestionada por el módulo `conexion_bd.py`.
+Descarga e ingesta automatizada del dataset de origen sintético desde Google Drive hacia un DataFrame de Pandas, gestionada por el módulo `conexion_bd.py`.
 
 ### 2. Comprensión y Diagnóstico de los Datos (EDA)
 - Separación algorítmica de variables numéricas vs. categóricas.
